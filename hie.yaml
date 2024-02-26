@@ -1,0 +1,13 @@
+cradle:
+  cabal:
+    - path: "././taffybar.hs"
+      component: "arch-taffy:exe:taffybar-x86_64"
+
+    - path: "./taffybar-src/src"
+      component: "lib:taffybar"
+
+    - path: "./taffybar-src/app/Main.hs"
+      component: "taffybar:exe:taffybar"
+
+    - path: "./taffybar-src/app/Paths_taffybar.hs"
+      component: "taffybar:exe:taffybar"

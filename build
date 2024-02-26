@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+EXE_NAME=taffybar-x86_64
+
+cabal build
+
+sudo find dist-newstyle -type f -executable -name $EXE_NAME \
+     -exec mv -u '{}' "/usr/local/bin" ';'
